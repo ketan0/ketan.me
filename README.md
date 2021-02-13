@@ -1,3 +1,3 @@
 # ketan.me
 
-Source for my personal landing page, [ketan.me](https://www.ketan.me/).
+Source code for my [personal website](https://ketan.me).

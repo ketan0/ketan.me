@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 interface ExpandableProps {
   title: string
   flipped?: boolean
@@ -25,26 +26,51 @@ const Expandable: React.FC<ExpandableProps> = ({ title, flipped, children }) => 
   )
 }
 
+interface MyLinkProps {
+  href: string
+}
+const MyLink: React.FC<MyLinkProps> = ({ href, children }) => (
+  <a className="text-blue-600 hover:underline" href={href}>
+    {children}
+  </a>
+)
+
 const IndexPage = () => {
   const [darkTheme, setDarkTheme] = useState(true)
   return (
-    <div className={`flex flex-col justify-start ${darkTheme ? "text-white bg-black" : "text-black bg-white"
+    <div className={`h-screen flex flex-col justify-start ${darkTheme ? "text-white bg-black" : "text-black bg-white"
       }`}>
       <button className="self-end" onClick={() => setDarkTheme(!darkTheme)}>{darkTheme ? "light theme" : "dark theme"}</button>
-      <div className="flex flex-col space-y-8 justify-center items-stretch h-screen">
+      <div className="flex flex-col space-y-8 justify-center items-stretch h-full">
         <div style={{ minHeight: "20%", maxHeight: "20%" }} className="flex flex-row justify-around items-end">
           <Expandable title="Who am I?" flipped>
-            <p>Stanford student studying Symbolic Systems and Computer Science. AI researcher. Human-focused interface designer. Cat lover, violin player, sushi eater. Second-generation Indian American.</p>
+            <p>
+              Well, I'm still figuring that out.
+              But for now, I'm a Stanford student, studying Symbolic Systems and Computer Science.
+              I spend my free time&nbsp;
+                            <MyLink href="https://twitter.com/_ketan0/status/1333332491365658624">drawing</MyLink>,
+        writing notes in my digital garden,
+        and building whatever I can dream up.
+                        </p>
           </Expandable>
           <Expandable title="What makes me tick?" flipped>
-            <p>I am most interested in studying fascinating, complex systems, whether they be made of neurons or transistors.</p>
+            <p>
+              I am most interested in studying fascinating, complex systems,
+              whether they be made of neurons or transistors. I am dreaming about new ways
+              that humans and computers can interact with each other.
+            </p>
           </Expandable>
           <Expandable title="Hit me up" flipped>
             <p>
-              I'm always looking to make new friends on <a className="text-blue-600 hover:underline" href="https://twitter.com/_ketan0">Twitter</a>!
-You can also send me an <a className="text-blue-600 hover:underline" href="mailto:agrawalk@stanford.edu">email</a>,
-or check out my open-source projects on <a className="text-blue-600 hover:underline" href="https://github.com/ketan0">Github</a>.
-        </p>
+              I'm always looking to make new friends on&nbsp;
+                <MyLink href="https://twitter.com/_ketan0">
+                Twitter
+                </MyLink>!
+                You can also send me an&nbsp;
+                <MyLink href="mailto:agrawalk@stanford.edu">email</MyLink>,
+                or check out my open-source projects on&nbsp;
+                <MyLink href="https://github.com/ketan0/">Github</MyLink>.
+            </p>
           </Expandable>
         </div>
         <p className="text-7xl md:text-9xl self-center text-center">
@@ -61,8 +87,9 @@ or check out my open-source projects on <a className="text-blue-600 hover:underl
             <p>Coming soon!</p>
           </Expandable>
         </div>
-      </div >
-    </div>
+      </div>
+      <p className="self-center"><MyLink href="/resume.pdf">Resume</MyLink></p>
+    </div >
   )
 }
 

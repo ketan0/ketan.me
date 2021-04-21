@@ -1,19 +1,52 @@
-import { useState } from 'react'
+import Link from 'next/Link'
+import { SetStateAction, useState } from 'react'
+
+interface ExpandableTitleProps {
+  title: string
+  titleHref?: string
+  expanded: boolean
+  setExpanded: React.Dispatch<SetStateAction<boolean>>
+}
 
 interface ExpandableProps {
   title: string
+  titleHref?: string
   flipped?: boolean
 }
-const Expandable: React.FC<ExpandableProps> = ({ title, flipped, children }) => {
+
+
+const ExpandableTitle: React.FC<ExpandableTitleProps> = ({ title, titleHref, expanded, setExpanded }) => (
+  titleHref ? (
+    <Link href={titleHref}>
+      <a>
+        <p
+          className={"cursor-pointer font-bold text-center " +
+            (!expanded ? "hover:text-pink-600" : "text-pink-600")}
+          onClick={() => setExpanded(!expanded)}>
+          {title}
+        </p>
+      </a>
+    </Link>
+  ) : (
+      <p
+        className={"cursor-pointer font-bold text-center " +
+          (!expanded ? "hover:text-pink-600" : "text-pink-600")}
+        onClick={() => setExpanded(!expanded)}>
+        {title}
+      </p>
+    )
+)
+
+
+const Expandable: React.FC<ExpandableProps> = ({ title, titleHref, flipped, children }) => {
   const [expanded, setExpanded] = useState(false)
   const styles = "flex flex-col items-center space-y-4"
-  const titleP = (
-    <p
-      className={"cursor-pointer font-bold text-center" + (!expanded ? ' hover:' : ' ') + 'text-pink-600'}
-      onClick={() => setExpanded(!expanded)}>
-      {title}
-    </p>
-  );
+  const titleP = <ExpandableTitle
+    title={title}
+    titleHref={titleHref}
+    expanded={expanded}
+    setExpanded={setExpanded}
+  />;
   return (
     <div
       style={{ minWidth: "30%", maxWidth: "30%" }}
@@ -83,9 +116,10 @@ const IndexPage = () => {
           <Expandable title="Explore my writing">
             <p>Coming soon!</p>
           </Expandable>
-          <Expandable title="Explore my digital garden 🌱">
-            <p>Coming soon!</p>
-          </Expandable>
+          <Expandable
+            title="Explore my digital garden 🌱"
+            titleHref="https://garden.ketan.me"
+          />
         </div>
       </div>
       <p className="self-center"><MyLink href="/resume.pdf">Resume</MyLink></p>

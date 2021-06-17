@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Comfortaa', ...defaultTheme.fontFamily.sans],
+        display: ['Comfortaa', ...defaultTheme.fontFamily.serif],
+        body: ['Lato', ...defaultTheme.fontFamily.serif],
       },
     },
   },

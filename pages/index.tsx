@@ -94,7 +94,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/smart-glove">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img src="/glove.jpg" layout="fill" objectFit="contain" />
+                  <img className="contain" src="/glove.jpg" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">SMART GLOVE</p>
                   </div>
@@ -104,7 +104,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/org-twitter">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img src="/org-twitter.png" layout="fill" objectFit="cover" />
+                  <img className="contain" src="/org-twitter.png" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">ORG-TWITTER</p>
                   </div>
@@ -114,7 +114,7 @@ const IndexPage = () => (
             <Link href="https://garden.ketan.me/">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img src="/seedling-solid.svg" layout="fill" objectFit="cover" />
+                  <img className="contain" src="/seedling-solid.svg" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">DIGITAL GARDEN</p>
                   </div>
@@ -124,7 +124,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/selfdriving-rc">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img src="/selfdrivingcar.jpg" layout="fill" objectFit="contain" />
+                  <img className="contain" src="/selfdrivingcar.jpg" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">AUTONOMOUS RC CAR</p>
                   </div>

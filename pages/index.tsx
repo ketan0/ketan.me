@@ -95,7 +95,7 @@ const IndexPage = () => (
           <p>
             Most recently, I have been working in the&nbsp;
             <Link href="https://hci.stanford.edu"><a className="normal-link">Stanford HCI Group</a></Link>
-            , building a novel system for human-AI music co-creation.
+            , building a novel system for human-AI co-creation of artistic content.
           </p>
         </div>
         <div className="flex flex-col space-y-4">

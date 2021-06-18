@@ -79,11 +79,11 @@ const IndexPage = () => (
             , I applied modern computer vision algorithms to a large, naturalistic
             dataset of infant headcam footage. This analysis helped shed light on how
             babies' perceptual scenes change over time, and was accepted as a talk at
-            CogSci 2020. The
+            CogSci 2020. The&nbsp;
             <Link href="https://github.com/brialorelle/headcam-algo/"><a className="normal-link">code</a></Link>
-            and
+            &nbsp;and&nbsp;
             <Link href="https://psyarxiv.com/z7tdg/"><a className="normal-link">preprint</a></Link>
-            are avaiable.
+            &nbsp;are available.
           </p>
           <p>
             With the&nbsp;

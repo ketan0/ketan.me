@@ -144,6 +144,7 @@ const IndexPage = () => (
             Source code is available <Link href="https://github.com/ketan0/ketan.me"><a className="normal-link">here</a></Link>.
         </p>
     </footer>
-  </div>)
+  </div>
+)
 
 export default IndexPage

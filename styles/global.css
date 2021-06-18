@@ -9,4 +9,8 @@
     h1, h2, h3, h4, h5, h6 {
         @apply font-display
     }
+
+    .normal-link {
+        @apply text-blue-600 hover:underline hover:text-blue-800
+    }
 }

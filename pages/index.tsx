@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 interface NavItemProps {
   href: string
@@ -24,9 +23,9 @@ const Nav = () => (
       <NavItem href="/"><h1 className="font-bold text-2xl">Ketan Agrawal</h1></NavItem>
     </ul>
     <ul className="flex items-center">
-      <NavItem href="https://twitter.com/_ketan0"> <Image src="/twitter.svg" width="25" height="25" /> </NavItem>
-      <NavItem href="https://github.com/ketan0"> <Image src="/github.svg" width="25" height="25" /> </NavItem>
-      <NavItem href="https://www.linkedin.com/in/ketan-jay-agrawal/"> <Image src="/linkedin.svg" width="25" height="25" /> </NavItem>
+      <NavItem href="https://twitter.com/_ketan0"> <img src="/twitter.svg" width="25" height="25" /> </NavItem>
+      <NavItem href="https://github.com/ketan0"> <img src="/github.svg" width="25" height="25" /> </NavItem>
+      <NavItem href="https://www.linkedin.com/in/ketan-jay-agrawal/"> <img src="/linkedin.svg" width="25" height="25" /> </NavItem>
     </ul >
   </nav >
 )
@@ -37,7 +36,7 @@ const IndexPage = () => (
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-16 max-w-5xl">
         <div className="flex justify-center items-center">
-          <Image className="rounded-full" src="/me.jpg" alt="Picture of Ketan Agrawal" width="400" height="400" quality="100" />
+          <img className="rounded-full" src="/me.jpg" alt="Picture of Ketan Agrawal" width="400" height="400" quality="100" />
         </div>
         <div className="flex flex-col space-y-4">
           <h1 className="font-bold text-xl">About Me</h1>
@@ -95,7 +94,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/smart-glove">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <Image src="/glove.jpg" layout="fill" objectFit="contain" />
+                  <img src="/glove.jpg" layout="fill" objectFit="contain" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">SMART GLOVE</p>
                   </div>
@@ -105,7 +104,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/org-twitter">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <Image src="/org-twitter.png" layout="fill" objectFit="cover" />
+                  <img src="/org-twitter.png" layout="fill" objectFit="cover" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">ORG-TWITTER</p>
                   </div>
@@ -115,7 +114,7 @@ const IndexPage = () => (
             <Link href="https://garden.ketan.me/">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <Image src="/seedling-solid.svg" layout="fill" objectFit="cover" />
+                  <img src="/seedling-solid.svg" layout="fill" objectFit="cover" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">DIGITAL GARDEN</p>
                   </div>
@@ -125,7 +124,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/selfdriving-rc">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <Image src="/selfdrivingcar.jpg" layout="fill" objectFit="contain" />
+                  <img src="/selfdrivingcar.jpg" layout="fill" objectFit="contain" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">AUTONOMOUS RC CAR</p>
                   </div>

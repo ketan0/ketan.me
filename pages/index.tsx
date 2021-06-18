@@ -23,9 +23,15 @@ const Nav = () => (
       <NavItem href="/"><h1 className="font-bold text-2xl">Ketan Agrawal</h1></NavItem>
     </ul>
     <ul className="flex items-center">
-      <NavItem href="https://twitter.com/_ketan0"> <img src="/twitter.svg" width="25" height="25" /> </NavItem>
-      <NavItem href="https://github.com/ketan0"> <img src="/github.svg" width="25" height="25" /> </NavItem>
-      <NavItem href="https://www.linkedin.com/in/ketan-jay-agrawal/"> <img src="/linkedin.svg" width="25" height="25" /> </NavItem>
+      <NavItem href="https://twitter.com/_ketan0">
+        <img src="/twitter.svg" alt="Ketan Agrawal's twitter" width="25" height="25" />
+      </NavItem>
+      <NavItem href="https://github.com/ketan0">
+        <img src="/github.svg" alt="Ketan Agrawal's github" width="25" height="25" />
+      </NavItem>
+      <NavItem href="https://www.linkedin.com/in/ketan-jay-agrawal/">
+        <img src="/linkedin.svg" alt="Ketan Agrawal's linkedin" width="25" height="25" />
+      </NavItem>
     </ul >
   </nav >
 )
@@ -36,7 +42,7 @@ const IndexPage = () => (
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-16 max-w-5xl">
         <div className="flex justify-center items-center">
-          <img className="rounded-full" src="/me.jpg" alt="Picture of Ketan Agrawal" width="400" height="400" />
+          <img className="rounded-full" src="/me.jpg" alt="Ketan Agrawal headshot 2021" width="400" height="400" />
         </div>
         <div className="flex flex-col space-y-4">
           <h1 className="font-bold text-xl">About Me</h1>
@@ -94,7 +100,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/smart-glove">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img className="contain" src="/glove.jpg" />
+                  <img src="/glove.jpg" alt="raspberry pi smart glove" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">SMART GLOVE</p>
                   </div>
@@ -104,7 +110,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/org-twitter">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img className="contain" src="/org-twitter.png" />
+                  <img src="/org-twitter.png" alt="org-twitter project logo" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">ORG-TWITTER</p>
                   </div>
@@ -114,7 +120,7 @@ const IndexPage = () => (
             <Link href="https://garden.ketan.me/">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img className="contain" src="/seedling-solid.svg" />
+                  <img src="/seedling-solid.svg" alt="digital garden logo (seedling)" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">DIGITAL GARDEN</p>
                   </div>
@@ -124,7 +130,7 @@ const IndexPage = () => (
             <Link href="https://github.com/ketan0/selfdriving-rc">
               <a>
                 <div className="relative w-5/6 h-5/6">
-                  <img className="contain" src="/selfdrivingcar.jpg" />
+                  <img src="/selfdrivingcar.jpg" alt="autonomous rc car" />
                   <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
                     <p className="font-sans font-bold text-white text-center">AUTONOMOUS RC CAR</p>
                   </div>

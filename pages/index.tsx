@@ -51,7 +51,7 @@ const IndexPage = () => (
             Symbolic Systems (B.S.) and Computer Science (M.S.) During my time
             at Stanford, I've been involved with several&nbsp;
             <Link href="#research_interests">
-              <a className="normal-link"> research labs</a>
+              <a className="normal-link">research labs</a>
             </Link>
             , with a broad focus on human-centered artificial
             intelligence. I also enjoy creating&nbsp;
@@ -87,7 +87,7 @@ const IndexPage = () => (
           </p>
           <p>
             With the&nbsp;
-            <Link href="https://aicare.stanford.edu"><a className="normal-link"> Stanford Partnership in AI-Assisted Care</a></Link>
+            <Link href="https://aicare.stanford.edu"><a className="normal-link">Stanford Partnership in AI-Assisted Care</a></Link>
             , I have been exploring how we can use multimodal neural networks
             for automated screening of mental health problems, such as
             depression and anxiety.

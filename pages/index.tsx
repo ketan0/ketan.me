@@ -36,7 +36,7 @@ const IndexPage = () => (
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-16 max-w-5xl">
         <div className="flex justify-center items-center">
-          <img className="rounded-full" src="/me.jpg" alt="Picture of Ketan Agrawal" width="400" height="400" quality="100" />
+          <img className="rounded-full" src="/me.jpg" alt="Picture of Ketan Agrawal" width="400" height="400" />
         </div>
         <div className="flex flex-col space-y-4">
           <h1 className="font-bold text-xl">About Me</h1>

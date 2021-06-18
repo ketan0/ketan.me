@@ -77,9 +77,13 @@ const IndexPage = () => (
             In my work with the&nbsp;
             <Link href="https://langcog.stanford.edu"><a className="normal-link">Language and Cognition Lab</a></Link>
             , I applied modern computer vision algorithms to a large, naturalistic
-            dataset of infant headcam footage. The analysis helped shed light on how
+            dataset of infant headcam footage. This analysis helped shed light on how
             babies' perceptual scenes change over time, and was accepted as a talk at
-            CogSci 2020.
+            CogSci 2020. The
+            <Link href="https://github.com/brialorelle/headcam-algo/"><a className="normal-link">code</a></Link>
+            and
+            <Link href="https://psyarxiv.com/z7tdg/"><a className="normal-link">preprint</a></Link>
+            are avaiable.
           </p>
           <p>
             With the&nbsp;
@@ -90,7 +94,7 @@ const IndexPage = () => (
           </p>
           <p>
             Most recently, I have been working in the&nbsp;
-              <Link href="https://hci.stanford.edu"><a className="normal-link">Stanford HCI Group</a></Link>
+            <Link href="https://hci.stanford.edu"><a className="normal-link">Stanford HCI Group</a></Link>
             , building a novel system for human-AI music co-creation.
           </p>
         </div>

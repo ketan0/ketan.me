@@ -1,40 +1,5 @@
 import Link from 'next/link'
-
-interface NavItemProps {
-  href: string
-  isActive?: boolean
-}
-
-const NavItem: React.FC<NavItemProps> = ({ href, isActive, children }) => (
-  <li>
-    <Link href={href}>
-      <a
-        className={`font-display block px-4 py-2${isActive ? 'bg-blue-200 text-blue-700' : ''}`}
-      >
-        {children}
-      </a>
-    </Link>
-  </li>
-)
-
-const Nav = () => (
-  <nav className="p-4 flex justify-between">
-    <ul className="flex space-x-2 items-center">
-      <NavItem href="/"><h1 className="font-bold text-2xl">Ketan Agrawal</h1></NavItem>
-    </ul>
-    <ul className="flex items-center">
-      <NavItem href="https://twitter.com/_ketan0">
-        <img src="/twitter.svg" alt="Ketan Agrawal's twitter" width="25" height="25" />
-      </NavItem>
-      <NavItem href="https://github.com/ketan0">
-        <img src="/github.svg" alt="Ketan Agrawal's github" width="25" height="25" />
-      </NavItem>
-      <NavItem href="https://www.linkedin.com/in/ketan-jay-agrawal/">
-        <img src="/linkedin.svg" alt="Ketan Agrawal's linkedin" width="25" height="25" />
-      </NavItem>
-    </ul >
-  </nav >
-)
+import Nav from '../components/Nav'
 
 const IndexPage = () => (
   <div className="divide-y divide-gray-200">
@@ -97,7 +62,7 @@ const IndexPage = () => (
             <Link href="https://hci.stanford.edu"><a className="normal-link">Stanford HCI Group</a></Link>
             , building a novel system for human-AI co-creation of artistic
             content. One offshoot of the project thus far, interactive music
-            generation, can be seen
+            generation, can be seen&nbsp;
             <Link href="https://music220c.ketan.me/">
               <a className="normal-link">here</a>
             </Link>.

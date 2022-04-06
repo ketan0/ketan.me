@@ -88,7 +88,7 @@ const IndexPage = () => (
               </div>
             </a>
           </Link>
-          <Link href="https://laboratory.ketan.me/">
+          <Link href="https://nebula.ketan.me/">
             <a>
               <div className="relative w-5/6 h-5/6">
                 <img src="/nebula-logo.svg" alt="digital nebula logo (nebula)" />

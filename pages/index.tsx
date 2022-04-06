@@ -91,9 +91,9 @@ const IndexPage = () => (
           <Link href="https://laboratory.ketan.me/">
             <a>
               <div className="relative w-5/6 h-5/6">
-                <img src="/seedling-solid.svg" alt="digital garden logo (seedling)" />
+                <img src="/nebula-logo.svg" alt="digital nebula logo (nebula)" />
                 <div className="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out bg-gray-800 bg-opacity-0 opacity-0 hover:bg-opacity-50 hover:opacity-100">
-                  <p className="font-sans font-bold text-white text-center">DIGITAL GARDEN</p>
+                  <p className="font-sans font-bold text-white text-center">DIGITAL NEBULA</p>
                 </div>
               </div>
             </a>

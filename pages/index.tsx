@@ -9,7 +9,7 @@ const IndexPage = () => (
       <div className="flex flex-col space-y-4">
         <h1 className="font-bold text-xl">About Me</h1>
         <p>
-          Hi! I'm a fifth-year student at Stanford University studying
+          Hi! I'm a recent graduate of Stanford University, where I studied
           Symbolic Systems (B.S.) and Computer Science (M.S.) During my time
           at Stanford, I've been involved with several&nbsp;
             <Link href="#research_interests">
